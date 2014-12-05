@@ -70,7 +70,7 @@ class Stock():
         plt.legend()
         plt.xticks(rotation=45)
         plt.title('The Close Price of {} '.format(self.stock))
-        return fig
+        plt.show()
     
     
     def plot_changeprice_comparison(self):
@@ -84,7 +84,7 @@ class Stock():
         plt.legend()
         plt.xticks(rotation=45)
         plt.title('The Comparison between {} and market close price '.format(self.stock))
-        return fig
+        plt.show()
         
     def close_price_describe(self):
         return self.close_price.describe()
