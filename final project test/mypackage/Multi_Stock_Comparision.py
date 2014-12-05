@@ -19,8 +19,8 @@ def main():
     
     stock_class_list = {stock: Stock(stock,start,end) for stock in stock_name_list}
     pricecols = {stock:stock_class.close_price for stock,stock_class in stock_class_list.iteritems()}
-    closed_price_list = pd.DataFrame(pricecols)
-    print closed_price_list.head()
+    closed_price_df = pd.DataFrame(pricecols)
+    print closed_price_df.head()
 
 
 if __name__ == '__main__':
